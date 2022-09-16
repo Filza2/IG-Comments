@@ -1,9 +1,5 @@
-try:
-    import re
-    from time import sleep 
-    from requests import post,get
-    from colorama import Fore
-except ModuleNotFoundError:exit(f"[!] Module Missing !")
+try:import re;from time import sleep;from requests import post,get;from colorama import Fore
+except Exception as e:print(f'[!] Download The Missing Module ! , {e}');exit()
 done,error=0,0
 print(f"""
 {Fore.LIGHTMAGENTA_EX}
